@@ -1,5 +1,5 @@
 import * as React from "react"
-import { motion } from "framer-motion"
+import { motion, type Variants } from "framer-motion"
 import { cn } from "@/lib/utils"
 interface DockProps {
   className?: string
@@ -17,7 +17,7 @@ interface DockIconButtonProps {
   className?: string
 }
 
-const floatingAnimation = {
+const floatingAnimation: Variants = {
   initial: { y: 0 },
   animate: {
     y: [-2, 2, -2],
