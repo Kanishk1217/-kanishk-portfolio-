@@ -1,5 +1,5 @@
 import * as React from "react"
-import { motion, type Variants } from "framer-motion"
+import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 interface DockProps {
   className?: string
@@ -17,13 +17,6 @@ interface DockIconButtonProps {
   className?: string
 }
 
-const floatingAnimation: Variants = {
-  initial: { y: 0 },
-  animate: {
-    y: [-2, 2, -2],
-    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-  },
-}
 
 const DockIconButton = React.forwardRef<HTMLButtonElement, DockIconButtonProps>(
   ({ icon: Icon, label, onClick, className }, ref) => {
@@ -61,9 +54,8 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(({ items, className }, 
   return (
     <motion.div
       ref={ref}
-      initial="initial"
-      animate="animate"
-      variants={floatingAnimation}
+      animate={{ y: [-2, 2, -2] }}
+      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       className={cn(
         "flex items-center gap-1 px-3 py-2 rounded-2xl",
         "backdrop-blur-xl border shadow-2xl",
