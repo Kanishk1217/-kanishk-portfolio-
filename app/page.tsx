@@ -320,9 +320,13 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    fetch("/api/posts").then(r => r.json()).then((posts: PostMeta[]) => {
-      if (posts[0]) setLatestPost(posts[0])
-    }).catch(() => {})
+    setLatestPost({
+      slug: "what-sales-taught-me-about-data-that-no-dataset-ever-could",
+      title: "What Sales Taught Me About Data That No Dataset Ever Could",
+      date: "2025-04-10",
+      description: "I study data engineering. I work in sales. Most people treat those as opposites. Here's why that combination is the most useful thing on my resume.",
+      tags: ["Data Analysis", "Business", "Career"],
+    })
   }, [])
 
   useEffect(() => {
