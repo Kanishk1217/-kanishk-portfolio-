@@ -259,15 +259,15 @@ const projects = [
   },
   {
     num: "03",
-    title: "Financial Tracker",
-    sub: "Personal Finance Dashboard",
-    year: "2025",
-    metric: "Income · expenses · savings — month by month",
-    desc: "Track every rupee. Visual dashboard for personal finance — income vs. expense breakdown, savings rate over time, and category-level spending analysis. Built for clarity, not complexity.",
-    tags: ["Python", "SQL", "Data Visualization", "Dashboard"],
-    link: "",
+    title: "FinanceAI",
+    sub: "AI-Powered Finance Tracker",
+    year: "2026",
+    metric: "Plaid bank sync · multi-account · anomaly detection",
+    desc: "Connect your real bank via Plaid and let the app surface what matters — spending categories that suddenly spiked, recurring subscriptions you forgot about, and month-over-month trends. Full-stack: React 19 + FastAPI + PostgreSQL.",
+    tags: ["React", "FastAPI", "PostgreSQL", "Plaid"],
+    link: "https://financial-ai.pages.dev",
     Thumb: FinancialThumbnail,
-    status: "building" as const,
+    status: "live" as const,
   },
 ]
 
