@@ -267,7 +267,7 @@ const projects = [
     tags: ["React", "FastAPI", "PostgreSQL", "Plaid"],
     link: "https://financial-ai.pages.dev",
     Thumb: FinancialThumbnail,
-    status: "live" as const,
+    status: "live" as "live" | "building",
   },
 ]
 
