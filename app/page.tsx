@@ -321,11 +321,11 @@ export default function Home() {
 
   useEffect(() => {
     setLatestPost({
-      slug: "what-sales-taught-me-about-data-that-no-dataset-ever-could",
-      title: "What Sales Taught Me About Data That No Dataset Ever Could",
-      date: "2025-04-10",
-      description: "I study data engineering. I work in sales. Most people treat those as opposites. Here's why that combination is the most useful thing on my resume.",
-      tags: ["Data Analysis", "Business", "Career"],
+      slug: "building-financeai-when-your-bank-data-becomes-actually-useful",
+      title: "Building FinanceAI — When Your Bank Data Becomes Actually Useful",
+      date: "2026-05-14",
+      description: "Banks already have all your transaction data. The problem isn't capture — it's that the data sits behind clunky interfaces nobody opens twice a month. FinanceAI is what happens when you treat that data as a product instead of a statement.",
+      tags: ["React", "FastAPI", "PostgreSQL", "Plaid", "Full-Stack"],
     })
   }, [])
 
